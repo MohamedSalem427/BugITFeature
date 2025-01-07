@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC564D972D2D3E8B003C75CC /* BugReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */; };
+		FC564D9A2D2D409C003C75CC /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564D992D2D409C003C75CC /* ImagePickerView.swift */; };
+		FC564DA22D2D4798003C75CC /* View+HideKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DA12D2D4798003C75CC /* View+HideKeyBoard.swift */; };
+		FC564DA52D2D65F4003C75CC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DA42D2D65F4003C75CC /* Strings.swift */; };
+		FC564DA72D2D671B003C75CC /* AppSystemImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DA62D2D671B003C75CC /* AppSystemImage.swift */; };
+		FC564DA92D2D67B3003C75CC /* Image+SystemName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DA82D2D67B3003C75CC /* Image+SystemName.swift */; };
 		FCD6F0CF2D2D178100D28C1C /* BugITFeatureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F0CE2D2D178100D28C1C /* BugITFeatureApp.swift */; };
-		FCD6F0D12D2D178100D28C1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F0D02D2D178100D28C1C /* ContentView.swift */; };
+		FCD6F0D12D2D178100D28C1C /* BugReportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */; };
 		FCD6F0D32D2D178200D28C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD6F0D22D2D178200D28C1C /* Assets.xcassets */; };
 		FCD6F0D62D2D178200D28C1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD6F0D52D2D178200D28C1C /* Preview Assets.xcassets */; };
 		FCD6F0E02D2D178200D28C1C /* BugITFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F0DF2D2D178200D28C1C /* BugITFeatureTests.swift */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportViewModel.swift; sourceTree = "<group>"; };
+		FC564D992D2D409C003C75CC /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		FC564DA12D2D4798003C75CC /* View+HideKeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyBoard.swift"; sourceTree = "<group>"; };
+		FC564DA42D2D65F4003C75CC /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		FC564DA62D2D671B003C75CC /* AppSystemImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSystemImage.swift; sourceTree = "<group>"; };
+		FC564DA82D2D67B3003C75CC /* Image+SystemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+SystemName.swift"; sourceTree = "<group>"; };
 		FCD6F0CB2D2D178100D28C1C /* BugITFeature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugITFeature.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6F0CE2D2D178100D28C1C /* BugITFeatureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugITFeatureApp.swift; sourceTree = "<group>"; };
-		FCD6F0D02D2D178100D28C1C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportScreen.swift; sourceTree = "<group>"; };
 		FCD6F0D22D2D178200D28C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCD6F0D52D2D178200D28C1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCD6F0DB2D2D178200D28C1C /* BugITFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugITFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +83,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC564D952D2D3D77003C75CC /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */,
+				FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FC564D982D2D4082003C75CC /* Presentaion */ = {
+			isa = PBXGroup;
+			children = (
+				FC564D992D2D409C003C75CC /* ImagePickerView.swift */,
+				FC564DA62D2D671B003C75CC /* AppSystemImage.swift */,
+			);
+			path = Presentaion;
+			sourceTree = "<group>";
+		};
+		FC564DA02D2D476F003C75CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DA12D2D4798003C75CC /* View+HideKeyBoard.swift */,
+				FC564DA82D2D67B3003C75CC /* Image+SystemName.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC564DA32D2D65A1003C75CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6F0D22D2D178200D28C1C /* Assets.xcassets */,
+				FC564DA42D2D65F4003C75CC /* Strings.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		FCD6F0C22D2D178100D28C1C = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				FCD6F0CE2D2D178100D28C1C /* BugITFeatureApp.swift */,
-				FCD6F0D02D2D178100D28C1C /* ContentView.swift */,
-				FCD6F0D22D2D178200D28C1C /* Assets.xcassets */,
+				FC564D952D2D3D77003C75CC /* Screens */,
+				FC564DA32D2D65A1003C75CC /* Resources */,
+				FC564DA02D2D476F003C75CC /* Extensions */,
+				FC564D982D2D4082003C75CC /* Presentaion */,
 				FCD6F0D42D2D178200D28C1C /* Preview Content */,
 			);
 			path = BugITFeature;
@@ -257,8 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCD6F0D12D2D178100D28C1C /* ContentView.swift in Sources */,
+				FC564D9A2D2D409C003C75CC /* ImagePickerView.swift in Sources */,
+				FC564DA22D2D4798003C75CC /* View+HideKeyBoard.swift in Sources */,
+				FCD6F0D12D2D178100D28C1C /* BugReportScreen.swift in Sources */,
 				FCD6F0CF2D2D178100D28C1C /* BugITFeatureApp.swift in Sources */,
+				FC564DA52D2D65F4003C75CC /* Strings.swift in Sources */,
+				FC564DA92D2D67B3003C75CC /* Image+SystemName.swift in Sources */,
+				FC564D972D2D3E8B003C75CC /* BugReportViewModel.swift in Sources */,
+				FC564DA72D2D671B003C75CC /* AppSystemImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +481,7 @@
 				DEVELOPMENT_TEAM = CX4FG42497;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos to allow you to upload an image.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +511,7 @@
 				DEVELOPMENT_TEAM = CX4FG42497;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos to allow you to upload an image.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
