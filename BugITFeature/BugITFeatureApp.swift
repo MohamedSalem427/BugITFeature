@@ -14,7 +14,7 @@ struct BugITFeatureApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            BugReportScreen()
+            BugReportScreen(viewModel: BugReportViewModel())
         }
     }
 }

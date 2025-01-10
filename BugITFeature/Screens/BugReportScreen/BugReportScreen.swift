@@ -8,44 +8,55 @@
 import SwiftUI
 
 struct BugReportScreen: View {
-    
-    @StateObject private var viewModel = BugReportViewModel()
-    @FocusState private var isDescriptionFieldFocused: Bool
-    
-    private let notificationCenter = NotificationCenter.default
+    @StateObject private var viewModel:BugReportViewModel
+    init(viewModel: BugReportViewModel = BugReportViewModel()) {
+           _viewModel = StateObject(wrappedValue: viewModel)
+       }
     var body: some View {
         NavigationView {
-            ZStack {
-                Form {
-                    Section(header: Text(Strings.bugDetails)) {
-                        descriptionTextField
-                        selectImageButton
-                        captureScreenshot
-                        imagePreview
-                    }
+            GeometryReader { geometry in
+                VStack(alignment: .leading) {
+                    descriptionTextField
+                    Divider()
+                    SelectImageScreenshotButton(
+                        title: Strings.selectScreenshot,
+                        systemImageName: .photo,
+                        systemImageForegroundColor: .blue,
+                        verticalPadding: 8) {
+                            viewModel.showingImagePicker = true
+                        }
+                    Divider()
+                    SelectImageScreenshotButton(
+                        title: Strings.captureScreenshot,
+                        systemImageName: .userRectangle,
+                        systemImageForegroundColor: .blue,
+                        verticalPadding: 8) {
+                            viewModel.inputImage = captureScreenshoot()
+                        }
+                    Divider()
+                    imagePreview
                     submitButton
-                }
-                .navigationTitle(Strings.bugTracker)
-                .onAppear { viewModel.onAppear() }
-                .sheet(isPresented: $viewModel.showingImagePicker) {
-                    ImagePickerView(image: $viewModel.inputImage)
-                }
-                .alert(isPresented: $viewModel.showingAlert) {
-                    Alert(title: Text(viewModel.alertTitle), message: Text(viewModel.alertMessage), dismissButton: .default(Text(Strings.ok)))
-                }
+                }.frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
+            }
+            .padding(.horizontal , 16)
+            .navigationTitle(Strings.bugTracker)
+            .onAppear { viewModel.onAppear() }
+            .sheet(isPresented: $viewModel.showingImagePicker) {
+                ImagePickerView(image: $viewModel.inputImage)
+            }
+            .alert(isPresented: $viewModel.showingAlert) {
+                Alert(title: Text(viewModel.alertTitle), message: Text(viewModel.alertMessage), dismissButton: .default(Text(Strings.ok)))
             }
         }.dismissKeyboardOnTap()
     }
     
     private var descriptionTextField: some View {
         TextField(Strings.enterDescription, text: $viewModel.description)
-            .focused($isDescriptionFieldFocused)
-            .padding(.vertical, 6)
+            .padding(.vertical, 16)
     }
     
     private var selectImageButton: some View {
         Button(action: {
-            isDescriptionFieldFocused = false
             viewModel.showingImagePicker = true
         }) {
             HStack {
@@ -91,7 +102,6 @@ struct BugReportScreen: View {
     
     private var submitButton: some View {
         Button(action: {
-            isDescriptionFieldFocused = false
             viewModel.submitBug()
         }) {
             Text(Strings.submitBugReport)
@@ -103,11 +113,12 @@ struct BugReportScreen: View {
                 .font(.headline)
         }
         .disabled(viewModel.isSubmitButtonDisabled)
+        .padding(.vertical,10)
     }
 }
 
 #Preview {
-    BugReportScreen()
+    BugReportScreen(viewModel: BugReportViewModel())
 }
 
 extension BugReportScreen {

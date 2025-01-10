@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC1573B02D30F0CB00923DB0 /* SelectImageScreenshotButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1573AF2D30F0CB00923DB0 /* SelectImageScreenshotButton.swift */; };
+		FC1573B52D31132000923DB0 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1573B42D31132000923DB0 /* Environment.swift */; };
 		FC564D972D2D3E8B003C75CC /* BugReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */; };
 		FC564D9A2D2D409C003C75CC /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564D992D2D409C003C75CC /* ImagePickerView.swift */; };
 		FC564DA22D2D4798003C75CC /* View+HideKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DA12D2D4798003C75CC /* View+HideKeyBoard.swift */; };
@@ -26,6 +28,23 @@
 		FC564DC22D2DA11C003C75CC /* GoogleAPIClientForREST_APIGateway in Frameworks */ = {isa = PBXBuildFile; productRef = FC564DC12D2DA11C003C75CC /* GoogleAPIClientForREST_APIGateway */; };
 		FC564DC42D2DA11C003C75CC /* GoogleAPIClientForREST_APIManagement in Frameworks */ = {isa = PBXBuildFile; productRef = FC564DC32D2DA11C003C75CC /* GoogleAPIClientForREST_APIManagement */; };
 		FC564DC62D2DA1FE003C75CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC564DC52D2DA1FE003C75CC /* GoogleService-Info.plist */; };
+		FC564DC92D2DA630003C75CC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DC82D2DA630003C75CC /* Constants.swift */; };
+		FC564DCB2D2DA699003C75CC /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DCA2D2DA699003C75CC /* Date.swift */; };
+		FC564DCE2D2DA783003C75CC /* FirebaseStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DCD2D2DA783003C75CC /* FirebaseStorageRepository.swift */; };
+		FC564DD52D2DBE0F003C75CC /* FirebaseStorageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DD42D2DBE0F003C75CC /* FirebaseStorageRepositoryProtocol.swift */; };
+		FC564DDA2D2DC1CD003C75CC /* BugStorageRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DD92D2DC1CD003C75CC /* BugStorageRepositoryProtocol.swift */; };
+		FC564DDC2D2DC21F003C75CC /* BugEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DDB2D2DC21F003C75CC /* BugEntity.swift */; };
+		FC564DDE2D2DC27D003C75CC /* BugModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DDD2D2DC27D003C75CC /* BugModel.swift */; };
+		FC564DE02D2DC366003C75CC /* SwiftDataBugRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DDF2D2DC366003C75CC /* SwiftDataBugRepository.swift */; };
+		FC564DE22D2DC37F003C75CC /* UserDefaultsBugRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DE12D2DC37F003C75CC /* UserDefaultsBugRepository.swift */; };
+		FC564DE42D2DC4DF003C75CC /* BugReportUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DE32D2DC4DF003C75CC /* BugReportUseCases.swift */; };
+		FC564DE82D2DC92F003C75CC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FC564DE72D2DC92F003C75CC /* FirebaseStorage */; };
+		FC564DEA2D2E7A36003C75CC /* GoogleSheetRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DE92D2E7A36003C75CC /* GoogleSheetRepositoryProtocol.swift */; };
+		FC564DEC2D2E7A9A003C75CC /* GoogleSheetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DEB2D2E7A9A003C75CC /* GoogleSheetRepository.swift */; };
+		FC564DEE2D2E7AEC003C75CC /* GoogleAPIClientForREST_Sheets in Frameworks */ = {isa = PBXBuildFile; productRef = FC564DED2D2E7AEC003C75CC /* GoogleAPIClientForREST_Sheets */; };
+		FC564DF02D2E83D0003C75CC /* GoogleSignInRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DEF2D2E83D0003C75CC /* GoogleSignInRepositoryProtocol.swift */; };
+		FC564DF72D2E8631003C75CC /* GoogleSignInRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC564DF62D2E8631003C75CC /* GoogleSignInRepository.swift */; };
+		FC7348392D2FADAB0076F7E9 /* SignInUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7348382D2FADAB0076F7E9 /* SignInUseCases.swift */; };
 		FCD6F0CF2D2D178100D28C1C /* BugITFeatureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F0CE2D2D178100D28C1C /* BugITFeatureApp.swift */; };
 		FCD6F0D12D2D178100D28C1C /* BugReportScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */; };
 		FCD6F0D32D2D178200D28C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCD6F0D22D2D178200D28C1C /* Assets.xcassets */; };
@@ -53,6 +72,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC00A9092D304AB300537AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FC1573AF2D30F0CB00923DB0 /* SelectImageScreenshotButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageScreenshotButton.swift; sourceTree = "<group>"; };
+		FC1573B22D310DA900923DB0 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		FC1573B42D31132000923DB0 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportViewModel.swift; sourceTree = "<group>"; };
 		FC564D992D2D409C003C75CC /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		FC564DA12D2D4798003C75CC /* View+HideKeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyBoard.swift"; sourceTree = "<group>"; };
@@ -61,6 +84,21 @@
 		FC564DA82D2D67B3003C75CC /* Image+SystemName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+SystemName.swift"; sourceTree = "<group>"; };
 		FC564DAA2D2D7C4C003C75CC /* client_972696673460-4ljvu48t4skh7vgmrecr53npvuq4ctta.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_972696673460-4ljvu48t4skh7vgmrecr53npvuq4ctta.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		FC564DC52D2DA1FE003C75CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC564DC82D2DA630003C75CC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC564DCA2D2DA699003C75CC /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		FC564DCD2D2DA783003C75CC /* FirebaseStorageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageRepository.swift; sourceTree = "<group>"; };
+		FC564DD42D2DBE0F003C75CC /* FirebaseStorageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FC564DD92D2DC1CD003C75CC /* BugStorageRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugStorageRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FC564DDB2D2DC21F003C75CC /* BugEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugEntity.swift; sourceTree = "<group>"; };
+		FC564DDD2D2DC27D003C75CC /* BugModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugModel.swift; sourceTree = "<group>"; };
+		FC564DDF2D2DC366003C75CC /* SwiftDataBugRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataBugRepository.swift; sourceTree = "<group>"; };
+		FC564DE12D2DC37F003C75CC /* UserDefaultsBugRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBugRepository.swift; sourceTree = "<group>"; };
+		FC564DE32D2DC4DF003C75CC /* BugReportUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportUseCases.swift; sourceTree = "<group>"; };
+		FC564DE92D2E7A36003C75CC /* GoogleSheetRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FC564DEB2D2E7A9A003C75CC /* GoogleSheetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSheetRepository.swift; sourceTree = "<group>"; };
+		FC564DEF2D2E83D0003C75CC /* GoogleSignInRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInRepositoryProtocol.swift; sourceTree = "<group>"; };
+		FC564DF62D2E8631003C75CC /* GoogleSignInRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInRepository.swift; sourceTree = "<group>"; };
+		FC7348382D2FADAB0076F7E9 /* SignInUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUseCases.swift; sourceTree = "<group>"; };
 		FCD6F0CB2D2D178100D28C1C /* BugITFeature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugITFeature.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD6F0CE2D2D178100D28C1C /* BugITFeatureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugITFeatureApp.swift; sourceTree = "<group>"; };
 		FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugReportScreen.swift; sourceTree = "<group>"; };
@@ -83,6 +121,8 @@
 				FC564DB72D2D9C6F003C75CC /* GoogleSignIn in Frameworks */,
 				FC564DB42D2D9B9D003C75CC /* FirebaseAppCheck in Frameworks */,
 				FC564DBE2D2DA11C003C75CC /* GoogleAPIClientForREST_ACMEDNS in Frameworks */,
+				FC564DE82D2DC92F003C75CC /* FirebaseStorage in Frameworks */,
+				FC564DEE2D2E7AEC003C75CC /* GoogleAPIClientForREST_Sheets in Frameworks */,
 				FC564DC02D2DA11C003C75CC /* GoogleAPIClientForREST_AIPlatformNotebooks in Frameworks */,
 				FC564DAE2D2D9B9D003C75CC /* FirebaseAnalytics in Frameworks */,
 				FC564DB92D2D9C6F003C75CC /* GoogleSignInSwift in Frameworks */,
@@ -109,11 +149,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC1573B12D310D1C00923DB0 /* ConfigFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FC1573B22D310DA900923DB0 /* Secrets.xcconfig */,
+			);
+			path = ConfigFiles;
+			sourceTree = "<group>";
+		};
 		FC564D952D2D3D77003C75CC /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */,
-				FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */,
+				FC564DE52D2DC87F003C75CC /* BugReportScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -123,6 +170,7 @@
 			children = (
 				FC564D992D2D409C003C75CC /* ImagePickerView.swift */,
 				FC564DA62D2D671B003C75CC /* AppSystemImage.swift */,
+				FC1573AF2D30F0CB00923DB0 /* SelectImageScreenshotButton.swift */,
 			);
 			path = Presentaion;
 			sourceTree = "<group>";
@@ -132,6 +180,7 @@
 			children = (
 				FC564DA12D2D4798003C75CC /* View+HideKeyBoard.swift */,
 				FC564DA82D2D67B3003C75CC /* Image+SystemName.swift */,
+				FC564DCA2D2DA699003C75CC /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -145,6 +194,107 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		FC564DC72D2DA61A003C75CC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FC1573B12D310D1C00923DB0 /* ConfigFiles */,
+				FC564DC82D2DA630003C75CC /* Constants.swift */,
+				FC1573B42D31132000923DB0 /* Environment.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		FC564DCC2D2DA776003C75CC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DD62D2DC0D0003C75CC /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FC564DD02D2DBD6C003C75CC /* RepositoryInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DD42D2DBE0F003C75CC /* FirebaseStorageRepositoryProtocol.swift */,
+				FC564DD92D2DC1CD003C75CC /* BugStorageRepositoryProtocol.swift */,
+				FC564DE92D2E7A36003C75CC /* GoogleSheetRepositoryProtocol.swift */,
+				FC564DEF2D2E83D0003C75CC /* GoogleSignInRepositoryProtocol.swift */,
+			);
+			path = RepositoryInterfaces;
+			sourceTree = "<group>";
+		};
+		FC564DD12D2DBD7B003C75CC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DD02D2DBD6C003C75CC /* RepositoryInterfaces */,
+				FC564DD22D2DBD99003C75CC /* UseCase */,
+				FC564DD32D2DBDAA003C75CC /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		FC564DD22D2DBD99003C75CC /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DE32D2DC4DF003C75CC /* BugReportUseCases.swift */,
+				FC7348382D2FADAB0076F7E9 /* SignInUseCases.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		FC564DD32D2DBDAA003C75CC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DDB2D2DC21F003C75CC /* BugEntity.swift */,
+				FC564DDD2D2DC27D003C75CC /* BugModel.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		FC564DD62D2DC0D0003C75CC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DD82D2DC10A003C75CC /* Remote */,
+				FC564DD72D2DC102003C75CC /* Local */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		FC564DD72D2DC102003C75CC /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DDF2D2DC366003C75CC /* SwiftDataBugRepository.swift */,
+				FC564DE12D2DC37F003C75CC /* UserDefaultsBugRepository.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		FC564DD82D2DC10A003C75CC /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				FC564DCD2D2DA783003C75CC /* FirebaseStorageRepository.swift */,
+				FC564DEB2D2E7A9A003C75CC /* GoogleSheetRepository.swift */,
+				FC564DF62D2E8631003C75CC /* GoogleSignInRepository.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		FC564DE52D2DC87F003C75CC /* BugReportScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FCD6F0D02D2D178100D28C1C /* BugReportScreen.swift */,
+				FC564D962D2D3E8B003C75CC /* BugReportViewModel.swift */,
+			);
+			path = BugReportScreen;
+			sourceTree = "<group>";
+		};
+		FC564DE62D2DC92F003C75CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FCD6F0C22D2D178100D28C1C = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +302,7 @@
 				FCD6F0DE2D2D178200D28C1C /* BugITFeatureTests */,
 				FCD6F0E82D2D178200D28C1C /* BugITFeatureUITests */,
 				FCD6F0CC2D2D178100D28C1C /* Products */,
+				FC564DE62D2DC92F003C75CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,12 +320,16 @@
 			isa = PBXGroup;
 			children = (
 				FCD6F0CE2D2D178100D28C1C /* BugITFeatureApp.swift */,
+				FC00A9092D304AB300537AD6 /* Info.plist */,
 				FC564DAA2D2D7C4C003C75CC /* client_972696673460-4ljvu48t4skh7vgmrecr53npvuq4ctta.apps.googleusercontent.com.plist */,
 				FC564DC52D2DA1FE003C75CC /* GoogleService-Info.plist */,
 				FC564D952D2D3D77003C75CC /* Screens */,
-				FC564DA32D2D65A1003C75CC /* Resources */,
-				FC564DA02D2D476F003C75CC /* Extensions */,
+				FC564DD12D2DBD7B003C75CC /* Domain */,
+				FC564DCC2D2DA776003C75CC /* Data */,
 				FC564D982D2D4082003C75CC /* Presentaion */,
+				FC564DA02D2D476F003C75CC /* Extensions */,
+				FC564DC72D2DA61A003C75CC /* Helper */,
+				FC564DA32D2D65A1003C75CC /* Resources */,
 				FCD6F0D42D2D178200D28C1C /* Preview Content */,
 			);
 			path = BugITFeature;
@@ -233,6 +388,8 @@
 				FC564DBF2D2DA11C003C75CC /* GoogleAPIClientForREST_AIPlatformNotebooks */,
 				FC564DC12D2DA11C003C75CC /* GoogleAPIClientForREST_APIGateway */,
 				FC564DC32D2DA11C003C75CC /* GoogleAPIClientForREST_APIManagement */,
+				FC564DE72D2DC92F003C75CC /* FirebaseStorage */,
+				FC564DED2D2E7AEC003C75CC /* GoogleAPIClientForREST_Sheets */,
 			);
 			productName = BugITFeature;
 			productReference = FCD6F0CB2D2D178100D28C1C /* BugITFeature.app */;
@@ -355,14 +512,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC7348392D2FADAB0076F7E9 /* SignInUseCases.swift in Sources */,
+				FC564DF02D2E83D0003C75CC /* GoogleSignInRepositoryProtocol.swift in Sources */,
+				FC564DDC2D2DC21F003C75CC /* BugEntity.swift in Sources */,
+				FC564DDA2D2DC1CD003C75CC /* BugStorageRepositoryProtocol.swift in Sources */,
 				FC564D9A2D2D409C003C75CC /* ImagePickerView.swift in Sources */,
 				FC564DA22D2D4798003C75CC /* View+HideKeyBoard.swift in Sources */,
+				FC564DD52D2DBE0F003C75CC /* FirebaseStorageRepositoryProtocol.swift in Sources */,
+				FC564DCE2D2DA783003C75CC /* FirebaseStorageRepository.swift in Sources */,
+				FC564DCB2D2DA699003C75CC /* Date.swift in Sources */,
+				FC564DE42D2DC4DF003C75CC /* BugReportUseCases.swift in Sources */,
 				FCD6F0D12D2D178100D28C1C /* BugReportScreen.swift in Sources */,
+				FC1573B02D30F0CB00923DB0 /* SelectImageScreenshotButton.swift in Sources */,
 				FCD6F0CF2D2D178100D28C1C /* BugITFeatureApp.swift in Sources */,
 				FC564DA52D2D65F4003C75CC /* Strings.swift in Sources */,
 				FC564DA92D2D67B3003C75CC /* Image+SystemName.swift in Sources */,
 				FC564D972D2D3E8B003C75CC /* BugReportViewModel.swift in Sources */,
+				FC564DEA2D2E7A36003C75CC /* GoogleSheetRepositoryProtocol.swift in Sources */,
+				FC564DF72D2E8631003C75CC /* GoogleSignInRepository.swift in Sources */,
+				FC564DE02D2DC366003C75CC /* SwiftDataBugRepository.swift in Sources */,
+				FC1573B52D31132000923DB0 /* Environment.swift in Sources */,
+				FC564DE22D2DC37F003C75CC /* UserDefaultsBugRepository.swift in Sources */,
+				FC564DEC2D2E7A9A003C75CC /* GoogleSheetRepository.swift in Sources */,
 				FC564DA72D2D671B003C75CC /* AppSystemImage.swift in Sources */,
+				FC564DC92D2DA630003C75CC /* Constants.swift in Sources */,
+				FC564DDE2D2DC27D003C75CC /* BugModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +695,7 @@
 		FCD6F0F02D2D178200D28C1C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = AIzaSyDxks9tD9cF54OXib39uo3VANUcIgo_l2I;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,6 +704,7 @@
 				DEVELOPMENT_TEAM = CX4FG42497;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BugITFeature/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos to allow you to upload an image.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -551,6 +727,7 @@
 		FCD6F0F12D2D178200D28C1C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_KEY = AIzaSyDxks9tD9cF54OXib39uo3VANUcIgo_l2I;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,6 +736,7 @@
 				DEVELOPMENT_TEAM = CX4FG42497;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BugITFeature/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photos to allow you to upload an image.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -777,6 +955,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC564DBA2D2DA11C003C75CC /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
 			productName = GoogleAPIClientForREST_APIManagement;
+		};
+		FC564DE72D2DC92F003C75CC /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC564DAC2D2D9B9D003C75CC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FC564DED2D2E7AEC003C75CC /* GoogleAPIClientForREST_Sheets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC564DBA2D2DA11C003C75CC /* XCRemoteSwiftPackageReference "google-api-objectivec-client-for-rest" */;
+			productName = GoogleAPIClientForREST_Sheets;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
